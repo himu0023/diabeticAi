@@ -1,0 +1,1073 @@
+{
+  "dataset_info": {
+    "name": "Diabetes CGM Synthetic Dataset",
+    "version": "1.0",
+    "generated_date": "2026-03-10T16:39:51.010550",
+    "description": "Realistic synthetic CGM data with clinical outcomes",
+    "sampling_frequency": "5 minutes",
+    "n_patients": 50,
+    "n_train_patients": 35,
+    "n_val_patients": 7,
+    "n_test_patients": 8,
+    "total_readings": 432000,
+    "date_range": [
+      "2023-01-01 00:00:00",
+      "2027-02-08 23:55:00"
+    ]
+  },
+  "features": {
+    "temporal": [
+      "timestamp",
+      "hour",
+      "day_of_week",
+      "is_weekend",
+      "month"
+    ],
+    "glucose": [
+      "glucose",
+      "true_glucose"
+    ],
+    "treatments": [
+      "carb_intake",
+      "basal_insulin",
+      "bolus_insulin",
+      "insulin_delivered"
+    ],
+    "lifestyle": [
+      "activity_level",
+      "steps",
+      "sleep_quality",
+      "stress_level"
+    ],
+    "outcomes": [
+      "hypo_current",
+      "severe_hypo_current",
+      "hyper_current",
+      "severe_hyper_current",
+      "hypo_next_2h",
+      "severe_hypo_next_2h",
+      "hyper_next_2h",
+      "time_in_range",
+      "time_below_range",
+      "time_above_range"
+    ]
+  },
+  "clinical_thresholds": {
+    "severe_hypoglycemia": "<54 mg/dL",
+    "hypoglycemia": "<70 mg/dL",
+    "hyperglycemia": ">180 mg/dL",
+    "severe_hyperglycemia": ">250 mg/dL",
+    "target_range": "70-180 mg/dL"
+  },
+  "patients": {
+    "patient_000": {
+      "patient_id": "P000",
+      "age": 41,
+      "sex": "M",
+      "bmi": 33.6,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 5.5,
+      "insulin_sensitivity": 0.9,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_001": {
+      "patient_id": "P001",
+      "age": 62,
+      "sex": "F",
+      "bmi": 28.3,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 7,
+      "baseline_hba1c": 8.8,
+      "insulin_sensitivity": 1.27,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_002": {
+      "patient_id": "P002",
+      "age": 59,
+      "sex": "M",
+      "bmi": 20.9,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 7,
+      "baseline_hba1c": 5.9,
+      "insulin_sensitivity": 1.16,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_003": {
+      "patient_id": "P003",
+      "age": 30,
+      "sex": "F",
+      "bmi": 32.0,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 17,
+      "baseline_hba1c": 7.1,
+      "insulin_sensitivity": 0.71,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_004": {
+      "patient_id": "P004",
+      "age": 37,
+      "sex": "F",
+      "bmi": 28.6,
+      "diabetes_type": "Type1",
+      "diabetes_duration": 19,
+      "baseline_hba1c": 9.1,
+      "insulin_sensitivity": 1.22,
+      "treatment_regimen": {
+        "basal_insulin": "Lantus",
+        "basal_dose": 23.270010349370274,
+        "bolus_insulin": "Humalog",
+        "insulin_pump": "False",
+        "metformin": false,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_005": {
+      "patient_id": "P005",
+      "age": 67,
+      "sex": "F",
+      "bmi": 29.9,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 6,
+      "baseline_hba1c": 8.4,
+      "insulin_sensitivity": 1.27,
+      "treatment_regimen": {
+        "basal_insulin": "Levemir",
+        "basal_dose": 35.05173000623621,
+        "bolus_insulin": "Novolog",
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_006": {
+      "patient_id": "P006",
+      "age": 62,
+      "sex": "F",
+      "bmi": 28.9,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 4,
+      "baseline_hba1c": 8.3,
+      "insulin_sensitivity": 1.07,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_007": {
+      "patient_id": "P007",
+      "age": 44,
+      "sex": "M",
+      "bmi": 28.5,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 19,
+      "baseline_hba1c": 10.7,
+      "insulin_sensitivity": 0.94,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_008": {
+      "patient_id": "P008",
+      "age": 40,
+      "sex": "M",
+      "bmi": 31.1,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 13,
+      "baseline_hba1c": 5.6,
+      "insulin_sensitivity": 0.9,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_009": {
+      "patient_id": "P009",
+      "age": 50,
+      "sex": "F",
+      "bmi": 22.9,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 19,
+      "baseline_hba1c": 5.7,
+      "insulin_sensitivity": 0.93,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_010": {
+      "patient_id": "P010",
+      "age": 58,
+      "sex": "F",
+      "bmi": 25.7,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 11,
+      "baseline_hba1c": 7.2,
+      "insulin_sensitivity": 0.99,
+      "treatment_regimen": {
+        "basal_insulin": "Levemir",
+        "basal_dose": 40.432166662309584,
+        "bolus_insulin": "Humalog",
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_011": {
+      "patient_id": "P011",
+      "age": 71,
+      "sex": "M",
+      "bmi": 30.9,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 9,
+      "baseline_hba1c": 6.8,
+      "insulin_sensitivity": 1.28,
+      "treatment_regimen": {
+        "basal_insulin": "Toujeo",
+        "basal_dose": 21.892978336236204,
+        "bolus_insulin": "Novolog",
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_012": {
+      "patient_id": "P012",
+      "age": 61,
+      "sex": "F",
+      "bmi": 37.5,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 5.7,
+      "insulin_sensitivity": 0.87,
+      "treatment_regimen": {
+        "basal_insulin": "Toujeo",
+        "basal_dose": 49.309900993921396,
+        "bolus_insulin": "Novolog",
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_013": {
+      "patient_id": "P013",
+      "age": 36,
+      "sex": "F",
+      "bmi": 30.5,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 22,
+      "baseline_hba1c": 6.9,
+      "insulin_sensitivity": 1.02,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_014": {
+      "patient_id": "P014",
+      "age": 60,
+      "sex": "F",
+      "bmi": 27.2,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 17,
+      "baseline_hba1c": 6.6,
+      "insulin_sensitivity": 1.04,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_015": {
+      "patient_id": "P015",
+      "age": 50,
+      "sex": "M",
+      "bmi": 34.8,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 5,
+      "baseline_hba1c": 6.4,
+      "insulin_sensitivity": 1.52,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_016": {
+      "patient_id": "P016",
+      "age": 66,
+      "sex": "M",
+      "bmi": 30.2,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 5.5,
+      "insulin_sensitivity": 1.0,
+      "treatment_regimen": {
+        "basal_insulin": "Levemir",
+        "basal_dose": 36.32630885328919,
+        "bolus_insulin": "Humalog",
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_017": {
+      "patient_id": "P017",
+      "age": 57,
+      "sex": "M",
+      "bmi": 37.7,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 8.0,
+      "insulin_sensitivity": 0.71,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_018": {
+      "patient_id": "P018",
+      "age": 41,
+      "sex": "M",
+      "bmi": 28.3,
+      "diabetes_type": "Type1",
+      "diabetes_duration": 3,
+      "baseline_hba1c": 5.5,
+      "insulin_sensitivity": 1.0,
+      "treatment_regimen": {
+        "basal_insulin": "Toujeo",
+        "basal_dose": 18.975049294365917,
+        "bolus_insulin": "Apidra",
+        "insulin_pump": "False",
+        "metformin": false,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_019": {
+      "patient_id": "P019",
+      "age": 42,
+      "sex": "M",
+      "bmi": 18.5,
+      "diabetes_type": "Type1",
+      "diabetes_duration": 2,
+      "baseline_hba1c": 7.4,
+      "insulin_sensitivity": 1.26,
+      "treatment_regimen": {
+        "basal_insulin": "Lantus",
+        "basal_dose": 31.902917055477953,
+        "bolus_insulin": "Apidra",
+        "insulin_pump": "False",
+        "metformin": false,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_020": {
+      "patient_id": "P020",
+      "age": 48,
+      "sex": "M",
+      "bmi": 35.1,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 17,
+      "baseline_hba1c": 8.5,
+      "insulin_sensitivity": 0.5,
+      "treatment_regimen": {
+        "basal_insulin": "Levemir",
+        "basal_dose": 38.190215833090164,
+        "bolus_insulin": "Novolog",
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_021": {
+      "patient_id": "P021",
+      "age": 41,
+      "sex": "M",
+      "bmi": 32.3,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 16,
+      "baseline_hba1c": 6.1,
+      "insulin_sensitivity": 1.32,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_022": {
+      "patient_id": "P022",
+      "age": 36,
+      "sex": "M",
+      "bmi": 26.6,
+      "diabetes_type": "Type1",
+      "diabetes_duration": 9,
+      "baseline_hba1c": 7.8,
+      "insulin_sensitivity": 1.21,
+      "treatment_regimen": {
+        "basal_insulin": "Tresiba",
+        "basal_dose": 17.288886960312222,
+        "bolus_insulin": "Humalog",
+        "insulin_pump": "False",
+        "metformin": false,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_023": {
+      "patient_id": "P023",
+      "age": 24,
+      "sex": "F",
+      "bmi": 22.5,
+      "diabetes_type": "Prediabetes",
+      "diabetes_duration": 2,
+      "baseline_hba1c": 5.8,
+      "insulin_sensitivity": 0.78,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": "True",
+        "sglt2_inhibitor": false,
+        "glp1_ra": false
+      }
+    },
+    "patient_024": {
+      "patient_id": "P024",
+      "age": 47,
+      "sex": "M",
+      "bmi": 33.8,
+      "diabetes_type": "Type1",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 7.2,
+      "insulin_sensitivity": 0.83,
+      "treatment_regimen": {
+        "basal_insulin": "Lantus",
+        "basal_dose": 21.93039414283082,
+        "bolus_insulin": "Novolog",
+        "insulin_pump": "False",
+        "metformin": false,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_025": {
+      "patient_id": "P025",
+      "age": 41,
+      "sex": "F",
+      "bmi": 21.2,
+      "diabetes_type": "Prediabetes",
+      "diabetes_duration": 1,
+      "baseline_hba1c": 6.8,
+      "insulin_sensitivity": 1.07,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": "False",
+        "sglt2_inhibitor": false,
+        "glp1_ra": false
+      }
+    },
+    "patient_026": {
+      "patient_id": "P026",
+      "age": 63,
+      "sex": "F",
+      "bmi": 21.7,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 7,
+      "baseline_hba1c": 7.1,
+      "insulin_sensitivity": 0.93,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_027": {
+      "patient_id": "P027",
+      "age": 55,
+      "sex": "F",
+      "bmi": 31.0,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 28,
+      "baseline_hba1c": 9.2,
+      "insulin_sensitivity": 1.06,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_028": {
+      "patient_id": "P028",
+      "age": 40,
+      "sex": "F",
+      "bmi": 28.5,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 5,
+      "baseline_hba1c": 6.6,
+      "insulin_sensitivity": 0.93,
+      "treatment_regimen": {
+        "basal_insulin": "Lantus",
+        "basal_dose": 25.711906161685793,
+        "bolus_insulin": "Humalog",
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_029": {
+      "patient_id": "P029",
+      "age": 46,
+      "sex": "F",
+      "bmi": 35.0,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 8.0,
+      "insulin_sensitivity": 1.16,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_030": {
+      "patient_id": "P030",
+      "age": 49,
+      "sex": "F",
+      "bmi": 36.9,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 9,
+      "baseline_hba1c": 6.1,
+      "insulin_sensitivity": 0.71,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_031": {
+      "patient_id": "P031",
+      "age": 60,
+      "sex": "M",
+      "bmi": 35.9,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 41,
+      "baseline_hba1c": 7.9,
+      "insulin_sensitivity": 0.95,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_032": {
+      "patient_id": "P032",
+      "age": 51,
+      "sex": "M",
+      "bmi": 28.8,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 9.3,
+      "insulin_sensitivity": 0.84,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_033": {
+      "patient_id": "P033",
+      "age": 64,
+      "sex": "M",
+      "bmi": 26.0,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 24,
+      "baseline_hba1c": 8.8,
+      "insulin_sensitivity": 1.17,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_034": {
+      "patient_id": "P034",
+      "age": 62,
+      "sex": "M",
+      "bmi": 37.2,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 6.3,
+      "insulin_sensitivity": 0.97,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_035": {
+      "patient_id": "P035",
+      "age": 43,
+      "sex": "F",
+      "bmi": 21.9,
+      "diabetes_type": "Prediabetes",
+      "diabetes_duration": 9,
+      "baseline_hba1c": 6.8,
+      "insulin_sensitivity": 0.64,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": "False",
+        "sglt2_inhibitor": false,
+        "glp1_ra": false
+      }
+    },
+    "patient_036": {
+      "patient_id": "P036",
+      "age": 76,
+      "sex": "M",
+      "bmi": 36.7,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 1,
+      "baseline_hba1c": 9.4,
+      "insulin_sensitivity": 1.06,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_037": {
+      "patient_id": "P037",
+      "age": 49,
+      "sex": "M",
+      "bmi": 23.9,
+      "diabetes_type": "Prediabetes",
+      "diabetes_duration": 4,
+      "baseline_hba1c": 5.5,
+      "insulin_sensitivity": 1.41,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": "False",
+        "sglt2_inhibitor": false,
+        "glp1_ra": false
+      }
+    },
+    "patient_038": {
+      "patient_id": "P038",
+      "age": 32,
+      "sex": "F",
+      "bmi": 29.3,
+      "diabetes_type": "Type1",
+      "diabetes_duration": 10,
+      "baseline_hba1c": 7.1,
+      "insulin_sensitivity": 0.93,
+      "treatment_regimen": {
+        "basal_insulin": "Tresiba",
+        "basal_dose": 28.564441727083466,
+        "bolus_insulin": "Apidra",
+        "insulin_pump": "False",
+        "metformin": false,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_039": {
+      "patient_id": "P039",
+      "age": 57,
+      "sex": "M",
+      "bmi": 31.7,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 3,
+      "baseline_hba1c": 5.5,
+      "insulin_sensitivity": 0.97,
+      "treatment_regimen": {
+        "basal_insulin": "Levemir",
+        "basal_dose": 35.45050911026027,
+        "bolus_insulin": "Novolog",
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_040": {
+      "patient_id": "P040",
+      "age": 59,
+      "sex": "M",
+      "bmi": 35.1,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 2,
+      "baseline_hba1c": 8.9,
+      "insulin_sensitivity": 0.92,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_041": {
+      "patient_id": "P041",
+      "age": 56,
+      "sex": "F",
+      "bmi": 35.1,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 32,
+      "baseline_hba1c": 7.6,
+      "insulin_sensitivity": 0.94,
+      "treatment_regimen": {
+        "basal_insulin": "Lantus",
+        "basal_dose": 30.550424035348854,
+        "bolus_insulin": "Novolog",
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_042": {
+      "patient_id": "P042",
+      "age": 62,
+      "sex": "M",
+      "bmi": 32.6,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 6.4,
+      "insulin_sensitivity": 0.99,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_043": {
+      "patient_id": "P043",
+      "age": 18,
+      "sex": "F",
+      "bmi": 25.3,
+      "diabetes_type": "Type1",
+      "diabetes_duration": 5,
+      "baseline_hba1c": 7.0,
+      "insulin_sensitivity": 1.0,
+      "treatment_regimen": {
+        "basal_insulin": "Tresiba",
+        "basal_dose": 32.12358519618179,
+        "bolus_insulin": "Novolog",
+        "insulin_pump": "False",
+        "metformin": false,
+        "sglt2_inhibitor": "False",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_044": {
+      "patient_id": "P044",
+      "age": 67,
+      "sex": "F",
+      "bmi": 25.9,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 8.9,
+      "insulin_sensitivity": 0.96,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "True"
+      }
+    },
+    "patient_045": {
+      "patient_id": "P045",
+      "age": 58,
+      "sex": "F",
+      "bmi": 33.3,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 0,
+      "baseline_hba1c": 8.6,
+      "insulin_sensitivity": 1.16,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_046": {
+      "patient_id": "P046",
+      "age": 41,
+      "sex": "F",
+      "bmi": 26.8,
+      "diabetes_type": "Prediabetes",
+      "diabetes_duration": 9,
+      "baseline_hba1c": 6.7,
+      "insulin_sensitivity": 1.42,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": "False",
+        "sglt2_inhibitor": false,
+        "glp1_ra": false
+      }
+    },
+    "patient_047": {
+      "patient_id": "P047",
+      "age": 55,
+      "sex": "F",
+      "bmi": 29.7,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 15,
+      "baseline_hba1c": 7.9,
+      "insulin_sensitivity": 0.58,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_048": {
+      "patient_id": "P048",
+      "age": 49,
+      "sex": "M",
+      "bmi": 28.0,
+      "diabetes_type": "Type2",
+      "diabetes_duration": 2,
+      "baseline_hba1c": 6.4,
+      "insulin_sensitivity": 0.77,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": true,
+        "sglt2_inhibitor": "True",
+        "glp1_ra": "False"
+      }
+    },
+    "patient_049": {
+      "patient_id": "P049",
+      "age": 43,
+      "sex": "F",
+      "bmi": 26.6,
+      "diabetes_type": "Prediabetes",
+      "diabetes_duration": 30,
+      "baseline_hba1c": 7.7,
+      "insulin_sensitivity": 1.1,
+      "treatment_regimen": {
+        "basal_insulin": null,
+        "basal_dose": 0,
+        "bolus_insulin": null,
+        "insulin_pump": false,
+        "metformin": "True",
+        "sglt2_inhibitor": false,
+        "glp1_ra": false
+      }
+    }
+  },
+  "split_info": {
+    "train_patients": [
+      "P003",
+      "P036",
+      "P024",
+      "P029",
+      "P002",
+      "P033",
+      "P010",
+      "P019",
+      "P026",
+      "P022",
+      "P014",
+      "P020",
+      "P042",
+      "P015",
+      "P016",
+      "P008",
+      "P040",
+      "P012",
+      "P027",
+      "P005",
+      "P043",
+      "P048",
+      "P037",
+      "P044",
+      "P025",
+      "P039",
+      "P009",
+      "P007",
+      "P047",
+      "P049",
+      "P031",
+      "P018",
+      "P030",
+      "P004",
+      "P035"
+    ],
+    "val_patients": [
+      "P045",
+      "P032",
+      "P041",
+      "P028",
+      "P038",
+      "P017",
+      "P006"
+    ],
+    "test_patients": [
+      "P011",
+      "P013",
+      "P034",
+      "P000",
+      "P001",
+      "P023",
+      "P046",
+      "P021"
+    ],
+    "split_method": "patient_wise"
+  }
+}

@@ -1,0 +1,155 @@
+diabetes_ai_project/
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── environment.yml
+├── .gitignore
+│
+├── configs/
+│   ├── data_config.yaml
+│   ├── model_config.yaml
+│   ├── training_config.yaml
+│   ├── evaluation_config.yaml
+│   └── deployment_config.yaml
+│
+├── data/
+│   ├── raw/
+│   │   ├── train_data.csv
+│   │   ├── val_data.csv
+│   │   ├── test_data.csv
+│   │   └── metadata.json
+│   │
+│   ├── interim/
+│   │   └── cleaned_data.parquet
+│   │
+│   ├── processed/
+│   │   ├── feature_matrix.parquet
+│   │   └── labels.parquet
+│   │
+│   └── external/
+│       └── benchmark_datasets/
+│
+├── notebooks/
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_baseline_models.ipynb
+│   ├── 04_ml_models.ipynb
+│   ├── 05_deep_learning_models.ipynb
+│   ├── 06_model_interpretation.ipynb
+│   └── 07_error_analysis.ipynb
+│
+├── src/
+│
+│   ├── data/
+│   │   ├── data_loader.py
+│   │   ├── data_validation.py
+│   │   ├── preprocessing.py
+│   │   └── missing_value_handler.py
+│   │
+│   ├── features/
+│   │   ├── feature_engineering.py
+│   │   ├── lag_features.py
+│   │   ├── rolling_features.py
+│   │   ├── circadian_features.py
+│   │   └── physiological_features.py
+│   │
+│   ├── models/
+│   │
+│   │   ├── baseline/
+│   │   │   ├── logistic_regression.py
+│   │   │   ├── arima_model.py
+│   │   │   └── var_model.py
+│   │   │
+│   │   ├── ml_models/
+│   │   │   ├── random_forest.py
+│   │   │   ├── xgboost_model.py
+│   │   │   └── lightgbm_model.py
+│   │   │
+│   │   ├── deep_learning/
+│   │   │   ├── lstm_model.py
+│   │   │   ├── gru_model.py
+│   │   │   ├── transformer_model.py
+│   │   │   └── temporal_cnn.py
+│   │   │
+│   │   └── reinforcement_learning/
+│   │       ├── rl_environment.py
+│   │       ├── reward_function.py
+│   │       ├── insulin_policy.py
+│   │       └── constrained_rl.py
+│   │
+│   ├── training/
+│   │   ├── train_pipeline.py
+│   │   ├── hyperparameter_search.py
+│   │   └── cross_validation.py
+│   │
+│   ├── evaluation/
+│   │   ├── classification_metrics.py
+│   │   ├── regression_metrics.py
+│   │   ├── calibration_metrics.py
+│   │   ├── decision_curve_analysis.py
+│   │   └── fairness_metrics.py
+│   │
+│   ├── interpretation/
+│   │   ├── shap_analysis.py
+│   │   ├── feature_importance.py
+│   │   └── counterfactual_analysis.py
+│   │
+│   ├── monitoring/
+│   │   ├── drift_detection.py
+│   │   ├── model_monitoring.py
+│   │   └── performance_tracking.py
+│   │
+│   ├── deployment/
+│   │   ├── inference_pipeline.py
+│   │   ├── api_service.py
+│   │   └── streamlit_dashboard.py
+│   │
+│   └── utils/
+│       ├── logging_utils.py
+│       ├── config_loader.py
+│       └── visualization_utils.py
+│
+├── experiments/
+│   ├── experiment_001_baseline/
+│   ├── experiment_002_ml_models/
+│   ├── experiment_003_lstm/
+│   └── experiment_004_transformer/
+│
+├── models/
+│   ├── trained_models/
+│   ├── model_registry.json
+│   └── checkpoints/
+│
+├── reports/
+│   ├── figures/
+│   │   ├── glucose_patterns.png
+│   │   ├── calibration_curve.png
+│   │   └── feature_importance.png
+│   │
+│   ├── tables/
+│   │   ├── model_comparison.csv
+│   │   └── patient_results.csv
+│   │
+│   └── final_report.pdf
+│
+├── deployment/
+│   ├── docker/
+│   │   └── Dockerfile
+│   │
+│   ├── kubernetes/
+│   │   └── deployment.yaml
+│   │
+│   └── monitoring_dashboard/
+│
+├── tests/
+│   ├── test_data_pipeline.py
+│   ├── test_feature_engineering.py
+│   ├── test_models.py
+│   └── test_api.py
+│
+└── docs/
+    ├── dataset_description.md
+    ├── methodology.md
+    ├── experiment_log.md
+    └── project_architecture.md

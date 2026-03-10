@@ -1,0 +1,316 @@
+{
+  "overall": {
+    "mean_glucose": 174.18741090136947,
+    "std_glucose": 66.76450895460933,
+    "min_glucose": 40.0,
+    "max_glucose": 400.0,
+    "percent_time_in_range": 61.096296296296295,
+    "percent_time_below_range": 1.4314814814814816,
+    "percent_time_above_range": 36.4574074074074,
+    "hypo_event_rate": 0.7268518518518519,
+    "severe_hypo_rate": 0.7046296296296296,
+    "hyper_event_rate": 25.737962962962964
+  },
+  "by_patient": {
+    "P000": {
+      "mean_glucose": 127.65474384408915,
+      "time_in_range": 89.66435185185185,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P001": {
+      "mean_glucose": 224.82159064327487,
+      "time_in_range": 1.412037037037037,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P002": {
+      "mean_glucose": 133.0504274505211,
+      "time_in_range": 89.12037037037037,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P003": {
+      "mean_glucose": 161.1664563617245,
+      "time_in_range": 86.49305555555556,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P004": {
+      "mean_glucose": 243.5992857142857,
+      "time_in_range": 0.0,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P005": {
+      "mean_glucose": 173.3139216832262,
+      "time_in_range": 76.29629629629629,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P006": {
+      "mean_glucose": 196.59242193895452,
+      "time_in_range": 36.13425925925926,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P007": {
+      "mean_glucose": 322.48096630790826,
+      "time_in_range": 0.0,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P008": {
+      "mean_glucose": 135.9684481347211,
+      "time_in_range": 87.5462962962963,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P009": {
+      "mean_glucose": 132.2161890279565,
+      "time_in_range": 89.29398148148148,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P010": {
+      "mean_glucose": 154.88619158878504,
+      "time_in_range": 86.20370370370371,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P011": {
+      "mean_glucose": 165.5861344537815,
+      "time_in_range": 76.6550925925926,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P012": {
+      "mean_glucose": 114.49710111046171,
+      "time_in_range": 88.94675925925925,
+      "hypo_rate": 0.8449074074074074,
+      "demographics": {}
+    },
+    "P013": {
+      "mean_glucose": 162.2461061739944,
+      "time_in_range": 84.89583333333334,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P014": {
+      "mean_glucose": 191.58684672044896,
+      "time_in_range": 52.41898148148149,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P015": {
+      "mean_glucose": 136.563661873027,
+      "time_in_range": 90.9375,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P016": {
+      "mean_glucose": 85.39598924228251,
+      "time_in_range": 48.32175925925926,
+      "hypo_rate": 25.289351851851855,
+      "demographics": {}
+    },
+    "P017": {
+      "mean_glucose": 181.10966799158288,
+      "time_in_range": 70.05787037037037,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P018": {
+      "mean_glucose": 111.9563755254554,
+      "time_in_range": 89.29398148148148,
+      "hypo_rate": 1.215277777777778,
+      "demographics": {}
+    },
+    "P019": {
+      "mean_glucose": 159.70001169453866,
+      "time_in_range": 85.30092592592592,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P020": {
+      "mean_glucose": 183.76675622006775,
+      "time_in_range": 77.97453703703704,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P021": {
+      "mean_glucose": 159.960226741468,
+      "time_in_range": 85.2199074074074,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P022": {
+      "mean_glucose": 207.55417448405254,
+      "time_in_range": 28.078703703703706,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P023": {
+      "mean_glucose": 136.7612001403673,
+      "time_in_range": 87.87037037037037,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P024": {
+      "mean_glucose": 179.66530851188384,
+      "time_in_range": 76.04166666666666,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P025": {
+      "mean_glucose": 148.5476874562018,
+      "time_in_range": 87.62731481481481,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P026": {
+      "mean_glucose": 174.8775283526248,
+      "time_in_range": 79.74537037037037,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P027": {
+      "mean_glucose": 259.99298819679797,
+      "time_in_range": 0.0,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P028": {
+      "mean_glucose": 163.47779336138382,
+      "time_in_range": 83.54166666666667,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P029": {
+      "mean_glucose": 199.03563325926794,
+      "time_in_range": 34.699074074074076,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P030": {
+      "mean_glucose": 159.2423413950228,
+      "time_in_range": 84.20138888888889,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P031": {
+      "mean_glucose": 228.98754686035613,
+      "time_in_range": 1.6550925925925928,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P032": {
+      "mean_glucose": 232.05250816612227,
+      "time_in_range": 0.0,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P033": {
+      "mean_glucose": 197.51115925058548,
+      "time_in_range": 38.15972222222222,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P034": {
+      "mean_glucose": 162.21127845884413,
+      "time_in_range": 85.64814814814815,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P035": {
+      "mean_glucose": 139.41128768403834,
+      "time_in_range": 87.26851851851852,
+      "hypo_rate": 0.5092592592592593,
+      "demographics": {}
+    },
+    "P036": {
+      "mean_glucose": 241.71658285580634,
+      "time_in_range": 0.0,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P037": {
+      "mean_glucose": 132.00206969130028,
+      "time_in_range": 89.86111111111111,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P038": {
+      "mean_glucose": 144.9477772578381,
+      "time_in_range": 87.4074074074074,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P039": {
+      "mean_glucose": 119.29244288224956,
+      "time_in_range": 89.69907407407408,
+      "hypo_rate": 0.20833333333333334,
+      "demographics": {}
+    },
+    "P040": {
+      "mean_glucose": 241.37504095483268,
+      "time_in_range": 0.0,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P041": {
+      "mean_glucose": 191.21988536670958,
+      "time_in_range": 58.136574074074076,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P042": {
+      "mean_glucose": 179.7708893303728,
+      "time_in_range": 73.78472222222221,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P043": {
+      "mean_glucose": 148.26779324055664,
+      "time_in_range": 87.95138888888889,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P044": {
+      "mean_glucose": 198.7229690239626,
+      "time_in_range": 45.87962962962963,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P045": {
+      "mean_glucose": 212.94563970502168,
+      "time_in_range": 7.708333333333334,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P046": {
+      "mean_glucose": 108.93494384651379,
+      "time_in_range": 67.55787037037037,
+      "hypo_rate": 8.275462962962964,
+      "demographics": {}
+    },
+    "P047": {
+      "mean_glucose": 201.3233617568041,
+      "time_in_range": 40.682870370370374,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P048": {
+      "mean_glucose": 154.35645161290324,
+      "time_in_range": 86.09953703703704,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    },
+    "P049": {
+      "mean_glucose": 187.43974493974494,
+      "time_in_range": 53.32175925925926,
+      "hypo_rate": 0.0,
+      "demographics": {}
+    }
+  }
+}
